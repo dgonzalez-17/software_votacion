@@ -1,0 +1,14 @@
+<nb-card>
+    <nb-card-body>
+    <h1>CREAR CANDIDATO</h1>
+        <input [(ngModel)]="nombre" type="text" fullWidth nbInput placeholder="NOMBRE COMPLETO" required="yes">
+        <br>
+        <br>
+        <input [(ngModel)]="cedula" type="number" fullWidth nbInput placeholder="CEDULA" required="yes">
+        <br>
+        <br>
+        <input [(ngModel)]="resolucion" type="text" fullWidth nbInput placeholder="RESOLUCION" required="yes">
+        <hr>
+        <button fullWidth nbButton status="primary" (click)="crearCandidato()" >CREAR CANDIDATO</button>
+  </nb-card-body>
+</nb-card>

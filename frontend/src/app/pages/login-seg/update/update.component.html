@@ -1,0 +1,18 @@
+<nb-card>
+    <nb-card-body>
+    <h1>EDITAR USUARIO</h1> 
+      <form (ngSubmit)="editarUsuario()" [formGroup]="updateForm">
+      <input formControlName="_id" type="text"  fullWidth nbInput placeholder="ID"readonly >
+      <input formControlName="nombre" type="text"  fullWidth nbInput placeholder="Ingrese Nombre Completo" required="yes">
+      <br>
+      <br>
+      <input formControlName="correo" type="email" fullWidth  nbInput placeholder="Ingrese Correo" required="yes">
+      <br>
+      <br>
+      <input formControlName="contrasena" type="password" fullWidth nbInput placeholder="Ingrese Contraseña" required="yes">
+      <hr>
+      <button fullWidth nbButton status="primary" >EDITAR USUARIO</button>
+      
+    </form>
+    </nb-card-body>
+</nb-card>

@@ -1,0 +1,6 @@
+{
+  "url-api-gateway":"127.0.0.1",
+  "puerto-api-gateway": "3500",
+  "url-api-resultados":"http://127.0.0.1:3000",
+  "url-api-gestusuarios":"http://127.0.0.1:8080"
+}

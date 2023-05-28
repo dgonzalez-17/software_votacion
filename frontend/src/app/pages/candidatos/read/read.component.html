@@ -1,0 +1,28 @@
+<nb-card accent="info">
+    <nb-card-header>LISTAR CANDIDATOS
+        <button nbButton (click)='crearCandidato()' status="success"><i class="fas fa-plus"></i></button>
+    </nb-card-header>
+    <nb-card-body>
+        <table class="table table-striped">
+            <thead>
+                <td>NOMBRE</td>
+                <td>CEDULA</td>
+                <td>RESOLUCIÓN</td>
+                <td>OPCIONES</td>
+            </thead>
+            <tbody>
+               <ng-container *ngFor="let candidato of candidatos" >
+                <tr>
+                    <td>{{candidato.nombre}}</td>
+                    <td>{{candidato.cedula}}</td>
+                    <td>{{candidato.resolucion}}</td>
+                    <td>
+                        <button nbButton (click)="editarCandidato(candidato._id, candidato)" status="warning"><i class="fas fa-pencil-alt"></i></button>
+                        <button nbButton (click)="eliminarCandidato(candidato._id)" status="danger"><i class="fas fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+               </ng-container>
+            </tbody>
+        </table>
+  </nb-card-body>
+</nb-card>

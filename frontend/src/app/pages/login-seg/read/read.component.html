@@ -1,0 +1,27 @@
+<nb-card accent="info">
+    <nb-card-header>LISTAR USUARIOS
+        <button nbButton (click)='crearUsuario()' status="success"><i class="fas fa-plus"></i></button>
+    </nb-card-header>
+    <nb-card-body>
+        <table class="table table-striped">
+            <thead>
+                <td>NOMBRE</td>
+                <td>CORREO</td>
+                <td>OPCIONES</td>
+            </thead>
+            <tbody>
+               <ng-container *ngFor="let usuario of usuarios" >
+                <tr>
+                    <td>{{usuario.nombre}}</td>
+                    <td>{{usuario.correo}}</td>
+                    <td>
+                        <button nbButton (click)="editarUsuario(usuario._id, usuario)" status="warning"><i class="fas fa-pencil-alt"></i></button>
+                        <button nbButton (click)="eliminarUsuario(usuario._id)" status="danger"><i class="fas fa-solid fa-trash"></i></button>
+                    </td>
+
+                </tr>
+               </ng-container>
+            </tbody>
+        </table>
+  </nb-card-body>
+</nb-card>

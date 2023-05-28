@@ -1,0 +1,15 @@
+<nb-card>
+    <nb-card-body>
+    <h1>BIENVENIDO A LA REGISTRADURIA DEL SIGLO XXI</h1>
+    <h2>LOGIN</h2>
+    <label>Correo: </label>
+    <input [(ngModel)]="correo" type="text" fullWidth nbInput placeholder="Ingresa Correo">
+    <br>
+    <br>
+    <label>Contraseña: </label>
+    <input [(ngModel)]="contrasena"  type="text" fullWidth nbInput placeholder="Ingresa Contraseña">    
+    <br>
+    <hr>
+    <button fullWidth nbButton (click)="login()">INICIAR SESION</button>
+  </nb-card-body>
+</nb-card>

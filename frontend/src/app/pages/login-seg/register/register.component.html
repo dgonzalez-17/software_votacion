@@ -1,0 +1,14 @@
+<nb-card>
+    <nb-card-body>
+    <h1>CREAR USUARIO</h1>
+        <input [(ngModel)]="nombre" type="text" fullWidth nbInput placeholder="Ingrese su nombre completo" required="yes">
+        <br>
+        <br>
+        <input [(ngModel)]="correo" type="email" fullWidth nbInput placeholder="Ingrese su correo" required="yes">
+        <br>
+        <br>
+        <input [(ngModel)]="contrasena" type="password" fullWidth nbInput placeholder="Ingrese contraseña" required="yes">
+        <hr>
+        <button fullWidth nbButton status="primary" (click)="crearUsuario()" >CREAR USUARIO</button>
+  </nb-card-body>
+</nb-card>

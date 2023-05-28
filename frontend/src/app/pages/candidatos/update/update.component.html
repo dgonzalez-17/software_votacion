@@ -1,0 +1,18 @@
+<nb-card>
+    <nb-card-body>
+    <h1>EDITAR CANDIDATO</h1> 
+      <form (ngSubmit)="editarCandidato()" [formGroup]="updateForm">
+      <input formControlName="_id" type="text"  fullWidth nbInput placeholder="ID"readonly >
+      <input formControlName="nombre" type="text"  fullWidth nbInput placeholder="NOMBRE COMPLETO" required="yes">
+      <br>
+      <br>
+      <input formControlName="cedula" type="text" fullWidth  nbInput placeholder="CEDULA" required="yes">
+      <br>
+      <br>
+      <input formControlName="resolucion" type="text" fullWidth nbInput placeholder="RESOLUCION" required="yes">
+      <hr>
+      <button fullWidth nbButton status="primary" >EDITAR CANDIDATO</button>
+      
+    </form>
+    </nb-card-body>
+</nb-card>

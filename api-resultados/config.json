@@ -1,0 +1,6 @@
+{
+    "servidor":"127.0.0.1",
+    "puerto":"3000",
+    "servidor-db":"mongodb+srv://root:GRUPO8C4A@grupo8c4a.hipyb6q.mongodb.net/?retryWrites=true&w=majority",
+    "nombre-db":"app-academico"
+}
