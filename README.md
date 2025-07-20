@@ -12,17 +12,13 @@ Este proyecto explora una arquitectura distribuida basada en microservicios y de
 ---
 
 ## 🧩 Arquitectura general
-
+```yaml
 [ Angular (Frontend) ]
 ↓
 [ API Gateway - Java ]
 ↙ ↘
 [ Gestión Usuarios - Java ] [ Resultados - Python + Flask + MongoDB ]
-
-yaml
-Copy
-Edit
-
+```
 ---
 
 ## ✨ Funcionalidades principales
